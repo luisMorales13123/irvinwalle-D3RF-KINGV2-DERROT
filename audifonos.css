@@ -1,0 +1,274 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-image: url(./img/fondooooooo.png);    
+    color: white;
+    
+}
+header{
+    width: 40%;
+    height: 20vh;
+
+display: flex;
+background-size: cover;
+background-position: center;
+}
+
+.incio-sesion{
+    width: 10%;
+    height: 0.5vh;
+}
+.olvide{
+    width: 20%;
+    height: 10vh;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding: 20px;
+  
+}
+.nav.active{
+    background: rgb(152, 215, 240) ;
+    padding: 9px;
+    height: 80px ;
+    width: 100%;
+}
+.nav.active .logo,
+.nav.active a{
+    color: #000;
+}
+.nav.active a:hover{
+    background: #000;
+    color: rgb(143, 189, 242);
+}
+
+
+.logo{
+  
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+padding: -25px;
+
+display: flex;
+}
+
+
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+.menu li a{
+color: rgb(0, 0, 0);
+text-decoration: none;
+font-weight: bold;
+transition: all 0.5 ease;
+
+}
+.menu li a:hover{
+    padding: 5px;
+background: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border-radius: 15px;
+}
+
+
+.scrol{
+    height: 1000px;
+
+}
+
+.form-login{
+width: 400px;
+height: 340px; 
+background: #4e4e4e;
+margin: auto;
+margin-top: 180px;
+box-shadow: 7px 13px 20px rgb(75, 129, 245);
+padding: 20px 30px;
+border-top: 4px solid #017bab;
+color: white;
+}
+
+.form-login h5{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+.controls{
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background:#ebebeb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.buttons{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px ;
+    color: white;
+    letter-spacing:4px ;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+a.logo{
+    text-align: none;
+    text-decoration: none;
+}
+.buttons:hover{
+    background: blue;
+    box-shadow: 0 0 10px #0120ab, 0 0 40px
+    #0120ab, 0 0 80px #0120ab;
+    transition-delay: 1s;
+}
+.buttons span{
+position: absolute;
+display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#0120ab);
+}
+.buttons:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom:  0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#0120ab);
+}
+.buttons:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top:  -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#0120ab);
+}
+.buttons:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom:  -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#0120ab);
+} 
+.buttons:hover #span4{
+ bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.form-login p{
+    height: 40px;
+    text-align: center;
+ 
+}
+
+.form-login a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-login a:hover{
+    text-decoration: underline;
+}
+
+
+
+.welcome{
+    margin: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 8px;
+    box-shadow:10px 10px 10px 10px rgba(5, 129, 245 ) ;
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+}
+.contenedor-galeria{
+    height: 100px;
+    width: 100px;
+}
+.galeria__img{
+    height: 500px;
+    width: 500px;
+    margin: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    border: rgb(7, 7, 7) solid;
+    border-radius: 8px;
+    box-shadow:10px 10px 10px 10px rgba(5, 129, 245 ) 
+}
+
+.ok{
+    margin-top: 2cm;
+width: 100%;
+padding: 15px;
+background-color: rgb(94, 233, 145);
+color: white;
+}
+
+.bad{
+    margin-top: 2cm;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(230, 40, 40);
+    color: white;
+}
+.submenu{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+} 
+
+.submenu:hover{
+    color: #000;
+    opacity: 10;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.bordeado{
+    width: 100%;
+    height: 40px;
+    border: #000 solid;
+    
+}
